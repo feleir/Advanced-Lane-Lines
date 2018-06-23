@@ -182,9 +182,10 @@ I implemented this in the functions `draw_lane` and `draw_image_data` in the not
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link](./project_video_output.mp4)
+Here's a [link](./project_video_output.mp4) to the video result for the project.
 
 I tried both the challenge, [link](./challenge_video_output.mp4), and the harder challenge, [link](./harder_challenge_video_output.mp4).
+
 ---
 
 ### Discussion
