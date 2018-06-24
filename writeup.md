@@ -99,7 +99,7 @@ The results are:
 
 The code for my perspective transform can be found in the `Perspective transform` cells of "./project.ipyng".
 
-In a first step I tried to identify the area of the road I will like to apply my transformation, choosing values for the bottom top as `720` up to `455`.
+In a first step I tried to identify the area of the road I will like to apply my transformation, choosing values for the bottom top as `682` up to `464`.
 
 ![Perspective area][perspective_area]
 
@@ -107,28 +107,28 @@ Based on the previous area and applying and offset of `200` pixels I found the `
 
 Source
 ```
-[ 585.  455.]
- [ 705.  455.]
- [1130.  720.]
- [ 190.  720.]
+[ 575.  464.]
+[ 707.  464.]
+[1049.  682.]
+[ 258.  682.]
 ```
 
 Destination
 ```
-[ 200.    0.]
- [1080.    0.]
- [1080.  720.]
- [ 200.  720.]
+[300.   0.]
+[980.   0.]
+[980. 720.]
+[300. 720.]
 ```
 
 This resulted in the following source and destination points:
 
 | Source        | Destination   | 
 |:-------------:|:-------------:| 
-| 585, 455      | 200, 0        | 
-| 705, 455      | 1080, 0       |
-| 1130, 720     | 1080, 720     |
-| 190, 720      | 200, 0720     |
+| 575, 464      | 300, 0        | 
+| 705, 464      | 980, 0       |
+| 1049, 682     | 980, 720     |
+| 258, 682      | 300, 720     |
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image to verify that the lines appear parallel in the warped image.
 
